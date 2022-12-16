@@ -14,8 +14,7 @@ class Employee:
 
     @property
     def email(self):
-        e_mail = self.first + '.' + self.last + '@gmail.com'
-        return e_mail
+         return self.first + '.' + self.last + '@gmail.com'
 
     @fullname.setter
     def fullname(self, value):
@@ -23,14 +22,9 @@ class Employee:
         self.last = value.split(' ')[1]
 
     @fullname.deleter
-    def fullname(self, first, last):
-        del self.fullname  # Эта часть не работает, и я не знаю, почему
-
-
-
-
-
-
+    def fullname(self):
+        self.first = 'None'
+        self.last = 'None'
 
 emp_1 = Employee('John', 'Smith')
 
