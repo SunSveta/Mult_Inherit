@@ -16,13 +16,18 @@ class PersonTest:
         self.email = email
 
 def get_set_delete(person):
-     #вообще не могу понять, что тут делать.
-    # del person.name
 
-    # del person.email
+    del person.name
+    del person.email
+    del person.address
 
-    # del person.address
-    pass
+    person.name = 'Maria'
+    person.email = 'maria@mail.ru'
+    person.address = '654321 Lenin street'
+
+    person.name = 'Ivan'
+    person.email = "ivan@mail.ru"
+
 
 def main():
     person = Person("Ivan", "123567 Pushkinskaya ul.", "ivan@mail.ru")
